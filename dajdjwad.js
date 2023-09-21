@@ -1,6 +1,14 @@
-function captcha(){
-    let imagenes = {imagen1:None,imagen2:None, imagen3:None, imagen4:None};
-};
+function beforerender(cmp){};
+function afterrender(cmp){};
 
+function rotar(){
+    for (const [key, value] of Object.entries(correctas)) {
+        console.log(key, value);
+        if (value == false){
+            document.getElementById(key).style.transform = "rotate(90deg)"
+        };
+    };
+}
 
-//document.getElementById("imagen1").style.borderRadius = "10%";
+beforerender(rotar())
+//afterrender(rotar())

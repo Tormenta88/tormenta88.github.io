@@ -1,30 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>captcha</title>
-    <script>
-        let seleccionada = {imagen1:false,imagen2:false, imagen3:false, imagen4:false};
-        let correctas = {imagen1:true,imagen2:false,imagen3:false,imagen4:false};
-        function recorte(a){
-            if (seleccionada[a] == false){
-                document.getElementById(a).style.borderRadius = "10%";
-                seleccionada[a] = true;
-                console.log(seleccionada)
-            } else {
-                document.getElementById(a).style.borderRadius = "0%";
-                seleccionada[a] = false;
-                console.log(seleccionada)
-            };
-        };
-        function confirmacion(){
-            if (correctas.imagen1 == seleccionada.imagen1){
-                document.getElementById("correcto").innerHTML = "Esa es la imagen correcta";
-            }   
-            else {
-                document.getElementById("correcto").innerHTML = "Esa NO es la imagen correcta";
-            };
-        };
-    </script>
-    
+    <script id="script1" src="functions.js"> </script>
     <link rel="stylesheet" href="styles.css">
     
 </head>
