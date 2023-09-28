@@ -1,3 +1,5 @@
+function beforerender(cmp){};
+
 let seleccionada = {
     imagen1:false,
     imagen2:false,
@@ -10,12 +12,50 @@ const correctas = {
     imagen3:Math.random() < 0.5,
     imagen4:Math.random() < 0.5
 };
+
+
+function correciones(){
+    let cc = 0;
+    let cf = 0;
+    for (const [key, value] of Object.entries(correctas)) {
+        if (value == true){
+            cc+=1
+        } else{
+            cf+=1
+        };
+    };
+    for (const [key, value] of Object.entries(correctas)) {
+        if (cc>1 && value == true){
+            correctas[key] = false;
+            cc-=1
+        } if (cf == 4 && value == false){
+            correctas[key] = true
+            cf-=1
+        }
+    };   
+    console.log(cc, cf)
+}
+beforerender(correciones())
+
+
+
+
+
+
+
+
 function recorte(a){
     if (seleccionada[a] == false){
         document.getElementById(a).style.borderRadius = "10%";
         seleccionada[a] = true;
         console.log(seleccionada)
         console.log(correctas)
+            for (const [key, value] of Object.entries(correctas)) {
+                if (key !== a){
+                    seleccionada[key] = false;
+                    document.getElementById(key).style.borderRadius = "0%";
+                };
+            };
     } else {
         document.getElementById(a).style.borderRadius = "0%";
         seleccionada[a] = false;
