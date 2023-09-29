@@ -6,11 +6,14 @@ img{
 /*
 #imagen2{    transform: rotate(90deg);}
 */
-
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
 
 body{
   background-color: #6e4159ff;
   color: #EFD6D2;
+  text-align: center;
 }
 
 .block {
