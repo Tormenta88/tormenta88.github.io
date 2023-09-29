@@ -8,6 +8,11 @@ img{
 */
 
 
+body{
+  background-color: black;
+  color: #EFD6D2;
+}
+
 .block {
     display: block;
     width: 100%;

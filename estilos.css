@@ -5,6 +5,7 @@ body {
     align-items: center;
     font-family: "Josefin Sans", sans-serif;
     background: #000;
+    color: #EFD6D2;
   }
   
   nav {
@@ -16,13 +17,13 @@ body {
     font-size: 30px;
     text-decoration: none;
     margin: 20px;
-    color: #fff;
+    color: #EFD6D2;
   }
   nav a:after {
     content: "";
     height: 3px;
     width: 0;
-    background: #fff;
+    background: #EFD6D2;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;

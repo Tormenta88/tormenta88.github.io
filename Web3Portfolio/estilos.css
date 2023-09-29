@@ -1,10 +1,9 @@
 /*
-body {
-    font-family: Copperplate, Papyrus, fantasy;
-    background: #000;
-    color: #fff;
-    text-align: center;
-}
+--black: #000000ff;
+--tyrian-purple: #6f1b4fff;
+--eggplant: #6e4159ff;
+--hollywood-cerise: #de369dff;
+--misty-rose: #efd6d2ff;
 */
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -15,6 +14,8 @@ html, body{
 }
 
 body{
+  text-align: center;
+  color: #EFD6D2;
   background: black;
   font-family: Copperplate, Papyrus, fantasy;
 }
@@ -29,7 +30,7 @@ svg {
 
 .text-copy {
     fill: none;
-    stroke: white;
+    stroke: #EFD6D2;
     stroke-dasharray: 6% 29%;
     stroke-width: 5px;
     stroke-dashoffset: 0%;
