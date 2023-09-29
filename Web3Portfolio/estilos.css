@@ -35,27 +35,27 @@ svg {
     stroke-dashoffset: 0%;
     animation: stroke-offset 5.5s infinite linear;
 }
-
+/* Cambio de color #1 */
 .text-copy:nth-child(1){
   stroke: #4D163D;
   animation-delay: -1;
 }
-
+/* Cambio de color #2 */
 .text-copy:nth-child(2){
   stroke: #840037;
   animation-delay: -2s;
 }
-
+/* Cambio de color #3 */
 .text-copy:nth-child(3){
   stroke: #BD0034;
   animation-delay: -3s;
 }
-
+/* Cambio de color #4 */
 .text-copy:nth-child(4){
   stroke: #BD0034;
   animation-delay: -4s;
 }
-
+/* Cambio de color #5 */
 .text-copy:nth-child(5){
   stroke: #FDB731;
   animation-delay: -5s;
