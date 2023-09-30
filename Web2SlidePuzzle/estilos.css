@@ -4,3 +4,8 @@ body {
     background-color: #6F1B4F;
     color: #EFD6D2;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
