@@ -1,33 +1,38 @@
 img{
-    width: 300px;
-    height: 300px;
-    border-radius: 0%;
+  width: 300px;
+  height: 300px;
+  border-radius: 0%;
 }
 /*
 #imagen2{    transform: rotate(90deg);}
 */
 h1 {
-  font-family: 'Courier New', Courier, monospace;
+font-family: 'Courier New', Courier, monospace;
 }
 
 body{
-  background-color: #6e4159ff;
-  color: #EFD6D2;
-  text-align: center;
+background-color: #6e4159ff;
+color: #EFD6D2;
+text-align: center;
 }
 
+#correcto{
+font-size: 30px;
+}
+
+
 .block {
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-  }
-  .block:hover {
-    background-color: #ddd;
-    color: black;
-  }
+  display: block;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
