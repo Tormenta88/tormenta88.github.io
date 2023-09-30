@@ -24,7 +24,6 @@ body {
   #parte1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    left: -500px;
     clip-path: polygon(0 0, 33% 0, 33% 33%, 0 33%);
   }
   
