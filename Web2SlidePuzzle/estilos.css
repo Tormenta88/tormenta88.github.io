@@ -10,17 +10,14 @@ body {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
     background-color: #EFD6D2;
-    text-align: center;
     margin: auto;
+    border: solid 5px black;
     width: min-content;
-    height:60vmin ;
+    height: 37em;
+    
 }
 
 .part {
-    background-image: url(SlidePuzzleNBG.png);
-    background-size: contain;
-    background-position: left top;
-    border: 5px solid black;
     margin: 10px;
     height: 10vw;
 }
@@ -28,41 +25,48 @@ body {
   #parte1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    left: -0px;
-    clip: rect(10px, 800px, 800px, 300px);
+    left: -500px;
+    clip-path: polygon(0 0, 33% 0, 33% 33%, 0 33%);
   }
   
   #parte2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    clip-path: polygon(33% 0, 66% 0, 66% 33%, 33% 33%);
   }
   
   #parte3 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
+    clip-path: polygon(70% 0, 100% 0, 100% 33%, 33% 33%);
   }
   
   #parte4 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    clip-path: polygon(0 33%, 33% 33%, 33% 66%, 0 66%);
   }
   
   #parte6 {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+    clip-path: polygon(66% 33%, 100% 33%, 100% 66%, 66% 66%);
   }
   
   #parte7 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    clip-path: polygon(0 66%, 33% 66%, 33% 100%, 0 100%);
   }
   
   #parte8 {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    clip-path: polygon(33% 66%, 66% 66%, 66% 100%, 33% 100%);
   }
   
   #parte9 {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+    clip-path: polygon(66% 66%, 100% 66%, 100% 100%, 66% 100%);
   }
