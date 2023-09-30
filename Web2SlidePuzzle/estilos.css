@@ -29,7 +29,8 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     position: absolute;
-
+    left: -189px;
+    clip: rect(0px, 300px, 300px, 200px);
   }
   
   #parte2 {
@@ -44,11 +45,6 @@ body {
   
   #parte4 {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-  
-  #parte5 {
-    grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
   
