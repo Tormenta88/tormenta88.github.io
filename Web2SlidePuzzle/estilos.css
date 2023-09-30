@@ -45,6 +45,12 @@ body {
     clip-path: polygon(0 33%, 33% 33%, 33% 66%, 0 66%);
   }
   
+  #parte5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    opacity: 0;
+  }  
+  
   #parte6 {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
