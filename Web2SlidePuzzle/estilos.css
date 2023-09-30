@@ -12,14 +12,13 @@ body {
     background-color: #EFD6D2;
     margin: auto;
     border: solid 5px black;
-    width: 39em;
-    height: 37em;
-    
+    width: min-content;
+    height: 780px; 
 }
 
 .part {
     margin: 10px;
-    height: 10vw;
+    height: 15em;
 }
 
   #parte1 {
