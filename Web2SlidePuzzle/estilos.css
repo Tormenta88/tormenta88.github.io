@@ -29,7 +29,7 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     left: -0px;
-    clip: rect(0px, 800px, 800px, 0px);
+    clip: rect(10px, 800px, 800px, 300px);
   }
   
   #parte2 {
