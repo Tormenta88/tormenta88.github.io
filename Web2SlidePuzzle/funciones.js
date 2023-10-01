@@ -69,11 +69,11 @@ function cambio(partea){
         columnas[cords["parte5"][2][0]][cords["parte5"][2][1]] = vcolumnas;
         cords[partea][2] = ccoord;
         cords["parte5"][2] = vcoord;
-        console.log(cords["parte5"], filas)
         cords[partea][0] = cgrid1;
         cords[partea][1] = cgrid2;
         cords["parte5"][0] = vgrid1;
         cords["parte5"][1] = vgrid2;
+        console.log(cords["parte5"], filas)
     };
 };
 
