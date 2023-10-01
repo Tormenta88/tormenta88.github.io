@@ -15,8 +15,7 @@ let filas = [
     ["parte7","parte8","parte9"]
 ];
 let columnas = [
-    ["parte1","parte2","parte3"],
-    ["parte4","parte5","parte6"],
-    ["parte7","parte8","parte9"]
+    ["parte1","parte4","parte7"],
+    ["parte2","parte5","parte8"],
+    ["parte3","parte6","parte9"]
 ];
-
