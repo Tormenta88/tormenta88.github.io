@@ -20,10 +20,26 @@ function contactoVacio(parte){
         if (filas[i][filas[i].indexOf(parte)+1] == "parte5" || filas[i][filas[i].indexOf(parte)-1] == "parte5"){
             console.log(parte, i, "fila");
             return true;
-        };
-        if (columnas[i][columnas[i].indexOf(parte)+1] == "parte5" || columnas[i][columnas[i].indexOf(parte)-1] == "parte5"){
+        } else if (columnas[i][columnas[i].indexOf(parte)+1] == "parte5" || columnas[i][columnas[i].indexOf(parte)-1] == "parte5"){
             console.log(parte, i, "columna");
+            return true
         };
     };
 };
-//contactoVacio("parte2");
+contactoVacio("parte2");
+
+function cambio(partea){
+    if (contactoVacio(partea) == true){
+        cambioC(partea, "parte5")
+
+    }
+};
+
+let x = true;
+let y = false;
+let z = null;
+console.log(x,y)
+z = x
+x = y
+y = z
+console.log(x,y)
