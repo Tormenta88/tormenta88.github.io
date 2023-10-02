@@ -76,11 +76,3 @@ function cambio(partea){
         console.log(cords["parte5"], filas)
     };
 };
-
-let x = true;
-let y = false;
-let z = null;
-
-z = x
-x = y
-y = z

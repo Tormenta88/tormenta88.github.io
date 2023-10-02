@@ -1,0 +1,10 @@
+* {
+    text-align: center;
+    background-color: #DE369D;
+}
+
+canvas {
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

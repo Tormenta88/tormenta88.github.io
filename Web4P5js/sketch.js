@@ -7,7 +7,7 @@ var paths = [];
 var time = 0;
 
 function setup() {
-    createCanvas(506, 506);
+    createCanvas(406, 406);
     createPaths();
 }
 
@@ -19,6 +19,9 @@ function draw() {
     
     time += deltaTime;
 }
+
+
+
 
 function Path(path) {
     return {
