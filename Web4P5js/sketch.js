@@ -1,13 +1,15 @@
 const PATH_LENGTH = 8;
-const NUM_PATHS = 8;
-const MIN_CUTS = 4;
-const MAX_CUTS = 6;
+const NUM_PATHS = 6;
+const MIN_CUTS = 3;
+const MAX_CUTS = 5;
 
 var paths = [];
 var time = 0;
 
+
 function setup() {
-    createCanvas(406, 406);
+    createCanvas(406, windowHeight);
+    //createCanvas(windowWidth, windowHeight);
     createPaths();
 }
 
@@ -15,19 +17,18 @@ function draw() {
     background(205, 15, 40);
     drawPaths();
     fill(205, 15, 40)
+    //No parece necesario y sin embargo se queda
     noStroke();
     
     time += deltaTime;
 }
 
 
-
-
 function Path(path) {
     return {
         path: path,
         rectanglePos: createVector(0, 0),
-        rectangleSpeed: random(0.06, 0.1)
+        rectangleSpeed: random(0.03, 0.1)
     }
 }
 
@@ -79,7 +80,6 @@ function Chaikin(path) {
 
         newPath.push(createVector(p1.x * 0.75 + p2.x * 0.25, p1.y * 0.75 + p2.y * 0.25));
         newPath.push(createVector(p1.x * 0.25 + p2.x * 0.75, p1.y * 0.25 + p2.y * 0.75));
-    }
-    
+    }    
     return newPath.slice();
 }

@@ -1,10 +1,13 @@
 * {
     text-align: center;
-    background-color: #DE369D;
+    /*background-color: #DE369D;*/
+    background-color:   rgb(205, 15, 40);
 }
 
 canvas {
+    position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
+    
 }
