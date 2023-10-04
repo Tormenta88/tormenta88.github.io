@@ -17,8 +17,20 @@ text-align: center;
 }
 
 #correcto{
-font-size: 30px;
+  font-size: 30px;
 }
+
+.volver {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: antiquewhite;
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+}
+
+
 
 
 .block {
