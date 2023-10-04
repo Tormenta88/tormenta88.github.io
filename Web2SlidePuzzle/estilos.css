@@ -5,6 +5,16 @@ body {
     color: #EFD6D2;
 }
 
+.volver {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: antiquewhite;
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
