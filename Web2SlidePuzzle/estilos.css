@@ -13,7 +13,34 @@ body {
   font-size: x-large;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
+  transition: transform 1000ms;
 }
+.volver:hover,
+.button:focus-visible {
+  animation-name: ejemplo;
+  animation-duration: 0.5s;
+  color: black;
+  background-color: #EFD6D2;
+  border-radius: 5%;
+  transform: translateY(0.3rem);
+  transition: transform 250ms;
+
+
+  
+}
+@keyframes ejemplo {
+  from {
+    background-color: #6F1B4F;
+    color: antiquewhite;
+
+  }
+  to {
+    background-color: #EFD6D2;
+    color: black;
+  }
+  
+}
+
 
 .container {
     display: grid;

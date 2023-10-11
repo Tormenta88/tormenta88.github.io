@@ -1,27 +1,21 @@
-const PATH_LENGTH = 16;
-const NUM_PATHS = 8;
-const MIN_CUTS = 2;
-const MAX_CUTS = 5;
+var caminos = [];
+var tiempo = 0;
 
-var paths = [];
-var time = 0;
-
-
-var espacio;
+var espacio2;
 
 function setup() {
-    espacio = createCanvas(506, 506);
-    espacio.position(700,50)
+    espacio2 = createCanvas(506, 506);
+    espacio2.position(0,0)
     createPaths();
 }
 
 function draw() {
-    background(20, 15, 240);
+    background(20, 215, 40);
     drawPaths();
     fill(205, 15, 40)
     noStroke();
     
-    time += deltaTime;
+    tiempo += deltaTime;
 }
 
 function Path(path) {
@@ -50,24 +44,24 @@ function createPaths() {
         for (let k = 0; k < random(MIN_CUTS, MAX_CUTS); ++k)
             path = Chaikin(path);
 
-        paths.push(Path(path));
+        caminos.push(Path(path));
     }
 
-    paths.sort((a, b) => (a.rectangleSpeed > b.rectangleSpeed) ? 1 : -1);
+    caminos.sort((a, b) => (a.rectangleSpeed > b.rectangleSpeed) ? 1 : -1);
 }
 
 function drawPaths() {
     for (let i = 0; i < NUM_PATHS; ++i) {
-        var path = paths[i].path;
+        var path = caminos[i].path;
         for (let j = 0; j < path.length - 1; ++j) {
             stroke(41, 14, 14, map(i, 0, NUM_PATHS - 1, 50, 225));
-            strokeWeight(map(cos((time + j * path[j].y) * 0.005), -1, 1, 1.0, 4.0));
+            strokeWeight(map(cos((tiempo + j * path[j].y) * 0.005), -1, 1, 1.0, 4.0));
             line(path[j].x, path[j].y, path[j + 1].x, path[j + 1].y);
             
-            var rectPos = paths[i].rectanglePos;
+            var rectPos = caminos[i].rectanglePos;
             noStroke();
             rect(rectPos.x, rectPos.y, width, height);
-            paths[i].rectanglePos.y = time * paths[i].rectangleSpeed;
+            caminos[i].rectanglePos.y = tiempo * caminos[i].rectangleSpeed;
         }
     }
 }
