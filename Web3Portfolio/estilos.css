@@ -44,6 +44,26 @@
 
 
 
+/*Cositas de mis links:*/
+.linkses {
+  position:fixed;
+  bottom: 0px;
+  right: 0px;
+  font-size: larger;
+}
+.link {
+  color: #BD0034;
+}
+.link:hover {
+  color: #00c5e7;
+  background-color: #FDB731;
+}
+
+
+
+
+/*Cositas de la animación del titulo*/
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 html, body{
