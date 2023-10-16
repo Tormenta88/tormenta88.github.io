@@ -70,14 +70,14 @@ svg {
     fill: none;
     stroke: #EFD6D2;
     stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
+    stroke-width: 2px;
     stroke-dashoffset: 0%;
     animation: stroke-offset 5.5s infinite linear;
 }
 /* Cambio de color #1 */
 .text-copy:nth-child(1){
   stroke: #4D163D;
-  animation-delay: -1;
+  animation-delay: -1s;
 }
 /* Cambio de color #2 */
 .text-copy:nth-child(2){
