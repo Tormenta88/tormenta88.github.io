@@ -1,39 +1,118 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="estilos.css">
-    <title>Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <a href="https://tormenta88.github.io/DesarrolloWeb/" class="volver">Volver</a>
-    <svg viewBox="0 0 960 300">
-        <symbol id="s-text">
-          <text text-anchor="middle" x="50%" y="80%">Portfolio</text>
-          <text text-anchor="middle" x="50.25%" y="80.25%">Portfolio</text>
-          <text text-anchor="middle" x="50.5%" y="80.5%">Portfolio</text>
-        </symbol>
-      
-        <g class = "g-ants">
-          <use xlink:href="#s-text" class="text-copy"></use>
-          <use xlink:href="#s-text" class="text-copy"></use>
-          <use xlink:href="#s-text" class="text-copy"></use>
-          <use xlink:href="#s-text" class="text-copy"></use>
-          <use xlink:href="#s-text" class="text-copy"></use>
-        </g>
-    </svg>
+
+  <svg viewBox="0 0 960 300" aria-hidden="true">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%">Portfolio</text>
+      <text text-anchor="middle" x="50.25%" y="80.25%">Portfolio</text>
+      <text text-anchor="middle" x="50.5%" y="80.5%">Portfolio</text>
+    </symbol>
+
+    <g class="g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+
+  <header class="hero">
     <h1>Pablo Gallego Soler-Espiauba</h1>
-    <h2> Data Science & Ai student<h2>
-    <p> ❏ DATA SCIENCE</p>
+    <h2>Data Science &amp; AI student</h2>
+    <p class="section-label">❏ DATA SCIENCE</p>
+
     <div class="linkses">
-      <a class="link" id="cierto" href="https://es.linkedin.com/in/pablo-gallego-soler-espiauba-6abb71283">Linkedin</a>
-      <a class="link" href="https://github.com/Tormenta88">GitHub</a>
+      <a class="link" id="cierto" href="https://es.linkedin.com/in/pablo-gallego-soler-espiauba-6abb71283" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="link" href="https://github.com/Tormenta88" target="_blank" rel="noopener">GitHub</a>
     </div>
+  </header>
 
-      
+  <!-- Resume container -->
+  <main class="resume-wrap" role="main">
+    <section aria-labelledby="data-science">
+      <h3 id="data-science">❏ DATA SCIENCE</h3>
+      <p class="lead">
+        I have formed a solid foundation in data science through multiple <strong>analysis</strong> and <strong>visualization</strong> projects since the beginning of my training. I started working with <strong>Excel</strong> in <em>math</em> courses and later advanced to semi-professional projects in <strong>Python</strong> using <strong>real-world data</strong>, where complete <strong>ETL</strong> processes were applied. Subsequently, I integrated advanced <strong>visualization tools</strong> and <strong>machine learning</strong> techniques into larger-scale projects.
+      </p>
+    </section>
+
+    <section aria-labelledby="key-competences" class="section-card">
+      <h3 id="key-competences">Key Competences</h3>
+
+      <div class="competences" role="list">
+        <div class="competence" role="listitem"><span>Advanced Python</span></div>
+        <div class="competence" role="listitem"><span>Scikit-Learn</span></div>
+        <div class="competence" role="listitem"><span>Docker</span></div>
+        <div class="competence" role="listitem"><span>Bash</span></div>
+
+        <div class="competence" role="listitem"><span>PySpark, Pandas, NumPy</span></div>
+        <div class="competence" role="listitem"><span>Matplotlib / Seaborn</span></div>
+        <div class="competence" role="listitem"><span>GitHub</span></div>
+        <div class="competence" role="listitem"><span>Linux</span></div>
+
+        <div class="competence" role="listitem"><span>TensorFlow + Keras</span></div>
+        <div class="competence" role="listitem"><span>PowerBI / LookerStudio</span></div>
+        <div class="competence" role="listitem"><span>SQL</span></div>
+        <div class="competence" role="listitem"><span>Web Scraping</span></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="ml-ai">
+      <h3 id="ml-ai">Machine Learning &amp; Artificial Intelligence</h3>
+      <p>
+        I have developed complete <strong>supervised learning</strong> projects, covering everything from <strong>data preparation</strong> to <strong>model implementation</strong> and optimization through <strong>hyperparameter tuning</strong> and <strong>cross-validation</strong>. I have also applied <strong>unsupervised learning</strong> techniques such as <strong>clustering</strong> and <strong>dimensionality reduction</strong> to uncover patterns in unlabeled data.
+      </p>
+      <p>
+        I have knowledge of <strong>neural networks</strong> and their implementation using <strong>TensorFlow</strong> and <strong>Keras</strong>, as well as in <strong>computer vision</strong> and <strong>reinforcement learning</strong>, supported by a solid understanding of the mathematical foundations of these algorithms.
+      </p>
+    </section>
+
+    <section aria-labelledby="projects">
+      <h3 id="projects">Projects</h3>
+      <ul class="projects-list">
+        <li>Analysis of <strong>League of Legends</strong> matches through <strong>Kafka queues</strong>, integrated into an <strong>ML model pipeline</strong> and connected to <strong>real-time visualization dashboards</strong>.</li>
+        <li>Stock market trend analysis using <strong>neural networks</strong>, connected to an interactive dashboard for insights.</li>
+      </ul>
+    </section>
+
+    <section class="bottom-grid" aria-label="education and skills">
+      <div>
+        <h3>Education &amp; Certificates</h3>
+        <div class="edu-item">
+          <div class="title-strong">Fourth year Data Science &amp; AI degree</div>
+          <div class="muted-small">Alfonso X el Sabio University.</div>
+        </div>
+        <div class="edu-item">
+          <div class="title-strong">Data analysis y visualizacion Bootcamp</div>
+          <div class="muted-small">Ironhack Spain.</div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Other Skills &amp; Competences</h3>
+        <div class="muted-small"><strong>Languages</strong>
+          <ul>
+            <li>Native Spanish.</li>
+            <li>Fluent English.</li>
+          </ul>
+        </div>
+        <div class="muted-small"><strong>Personal attributes</strong>
+          <ul>
+            <li>Calm under pressure.</li>
+            <li>Eager to learn.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
-
-
-
-
-
-
-  
+</html>

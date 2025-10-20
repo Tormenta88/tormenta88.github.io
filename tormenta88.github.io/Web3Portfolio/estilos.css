@@ -1,14 +1,4 @@
-/*
---black: #000000ff;
---tyrian-purple: #6f1b4fff;
---eggplant: #6e4159ff;
---hollywood-cerise: #de369dff;
---misty-rose: #efd6d2ff;
-*/
-
-
-
-
+/* ---------- Original theme + nav/link styles ---------- */
 
 .volver {
   position: absolute;
@@ -18,7 +8,8 @@
   font-size: x-large;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
-  transition: transform 1000ms;
+  transition: transform 250ms;
+  padding: 8px 12px;
 }
 .volver:hover,
 .button:focus-visible {
@@ -27,11 +18,7 @@
   color: black;
   background-color: #EFD6D2;
   border-radius: 5%;
-  transform: translateY(0.3rem);
-  transition: transform 250ms;
-
-
-  
+  transform: translateY(0.2rem);
 }
 @keyframes ejemplo {
   from {
@@ -44,87 +31,189 @@
   }
 }
 
-/*Cositas de mis links:*/
+/* Link cluster bottom-right */
 .linkses {
-  position:fixed;
+  position: fixed;
   bottom: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  display:flex;
+  gap:10px;
+  align-items:right;
 }
 .link {
   color: #BD0034;
+  text-decoration: none;
+  font-weight: 700;
 }
 .link:hover {
   color: #FDB731;
 }
 
-
-
-
-/*Cositas de la animación del titulo*/
-
+/* Title animation fonts & base page */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 
-html, body{
+html, body {
   height: 100%;
+  margin: 0;
   font-weight: 800;
 }
 
-body{
+body {
   text-align: center;
   color: #EFD6D2;
   background: black;
   font-family: Copperplate, Papyrus, fantasy;
 }
 
-p{
-  margin-left: -300px;
-}
-
+/* SVG hero */
 svg {
-    display: block;
-    /*font: 15.5em 'Montserrat';*/
-    font: 15.5em 'Tangerine';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
+  display: block;
+  font: 15.5em 'Tangerine';
+  width: 100%;
+  max-width: 960px;
+  height: 300px;
+  margin: 0 auto;
 }
 
 .text-copy {
-    fill: none;
-    stroke: #EFD6D2;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 2px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
+  fill: none;
+  stroke: #EFD6D2;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 2px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
 }
-/* Cambio de color #1 */
-.text-copy:nth-child(1){
-  stroke: #4D163D;
-  animation-delay: -1s;
-}
-/* Cambio de color #2 */
-.text-copy:nth-child(2){
-  stroke: #840037;
-  animation-delay: -2s;
-}
-/* Cambio de color #3 */
-.text-copy:nth-child(3){
-  stroke: #BD0034;
-  animation-delay: -3s;
-}
-/* Cambio de color #4 */
-.text-copy:nth-child(4){
-  stroke: #BD0034;
-  animation-delay: -4s;
-}
-/* Cambio de color #5 */
-.text-copy:nth-child(5){
-  stroke: #FDB731;
-  animation-delay: -5s;
+.text-copy:nth-child(1){ stroke: #4D163D; animation-delay: -1s; }
+.text-copy:nth-child(2){ stroke: #840037; animation-delay: -2s; }
+.text-copy:nth-child(3){ stroke: #BD0034; animation-delay: -3s; }
+.text-copy:nth-child(4){ stroke: #BD0034; animation-delay: -4s; }
+.text-copy:nth-child(5){ stroke: #FDB731; animation-delay: -5s; }
+@keyframes stroke-offset{ 100% { stroke-dashoffset: -35%; } }
+
+/* ---------- Resume / content styles (fused) ---------- */
+
+/* Container for the resume card: use pale rose card on dark background */
+.resume-wrap {
+  max-width: 800px;
+  margin: 22px auto 80px auto;
+  color: #151515;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  text-align: left;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
 }
 
-@keyframes stroke-offset{
-  100% {stroke-dashoffset: -35%;}
+/* Headings inside the card */
+.resume-wrap h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #9b2379; /* dark accent */
+  letter-spacing: 1px;
 }
+
+/* body copy */
+.resume-wrap p, .resume-wrap li {
+  color: #e2e0bd;
+  line-height: 1.45;
+  margin: 0 0 12px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* Section label (the small "DATA SCIENCE" near hero) */
+.section-label {
+  margin-top: 6px;
+  margin-bottom: 18px;
+  color: #EFD6D2;
+  font-weight: 700;
+}
+
+/* Key Competences grid: keep rows aligned */
+.competences {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 28px;
+  margin-top: 8px;
+  align-items: start;
+}
+.competence {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 20px;
+  font-size: 14px;
+  color: #f9f5ac;
+}
+.competence::before{
+  content: "•";
+  color: #ff336d; /* red accent */
+  margin-right: 6px;
+  line-height: 1;
+}
+
+/* Projects */
+.projects-list {
+  margin: 8px 0 0 18px;
+  color: #333333;
+}
+.projects-list li { margin-bottom: 10px; }
+
+/* Bottom two-column area */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 18px;
+}
+.title-strong { font-weight: 700; color: #FDFBD4; margin-bottom: 6px; }
+.muted-small { color: #bbba9f; font-size: 14px; }
+
+/* Small polish for hero text on top of card */
+.hero {
+  margin: 0 auto 8px auto;
+  max-width: 980px;
+  padding: 0 24px;
+}
+.hero h1 {
+  margin: -18px 0 2px 0;
+  font-size: 28px;
+  color: #EFD6D2;
+  letter-spacing: 1px;
+}
+.hero h2 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  color: #EFD6D2;
+  font-weight: 700;
+}
+
+/* smaller screens: make competence grid responsive and card padding smaller */
+@media (max-width: 860px) {
+  .competences { grid-template-columns: repeat(2, 1fr); gap: 10px 20px; }
+  .bottom-grid { grid-template-columns: 1fr; }
+  .resume-wrap { margin: 12px; padding: 18px; }
+  svg { height: 210px; }
+}
+
+/* extra mobile tweak */
+@media (max-width: 420px) {
+  .competence { font-size: 13px; }
+  .resume-wrap p { font-size: 14px; }
+  .hero h1 { font-size: 20px; }
+  .hero h2 { font-size: 14px; }
+  svg { height: 170px; }
+}
+
+/* Utility: subtle card section divider */
+.section-card { padding-top: 8px; padding-bottom: 12px; }
+
+/* Remove default list styles inside resume and keep neat spacing */
+.resume-wrap ul { padding-left: 18px; margin: 6px 0 12px 0; }
+.resume-wrap ul li { list-style: disc; margin-bottom: 8px; }
+
+/* Accessibility focus outlines for links */
+a:focus { outline: 3px solid rgba(189,0,52,0.25); outline-offset: 2px; }
