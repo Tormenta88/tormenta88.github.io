@@ -1,0 +1,130 @@
+/*
+--black: #000000ff;
+--tyrian-purple: #6f1b4fff;
+--eggplant: #6e4159ff;
+--hollywood-cerise: #de369dff;
+--misty-rose: #efd6d2ff;
+*/
+
+
+
+
+
+.volver {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: antiquewhite;
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  transition: transform 1000ms;
+}
+.volver:hover,
+.button:focus-visible {
+  animation-name: ejemplo;
+  animation-duration: 0.5s;
+  color: black;
+  background-color: #EFD6D2;
+  border-radius: 5%;
+  transform: translateY(0.3rem);
+  transition: transform 250ms;
+
+
+  
+}
+@keyframes ejemplo {
+  from {
+    background-color: #6F1B4F;
+    color: antiquewhite;
+  }
+  to {
+    background-color: #EFD6D2;
+    color: black;
+  }
+}
+
+/*Cositas de mis links:*/
+.linkses {
+  position:fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+.link {
+  color: #BD0034;
+}
+.link:hover {
+  color: #FDB731;
+}
+
+
+
+
+/*Cositas de la animación del titulo*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+body{
+  text-align: center;
+  color: #EFD6D2;
+  background: black;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+p{
+  margin-left: -300px;
+}
+
+svg {
+    display: block;
+    /*font: 15.5em 'Montserrat';*/
+    font: 15.5em 'Tangerine';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: #EFD6D2;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 2px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+/* Cambio de color #1 */
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1s;
+}
+/* Cambio de color #2 */
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+/* Cambio de color #3 */
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+/* Cambio de color #4 */
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+/* Cambio de color #5 */
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
